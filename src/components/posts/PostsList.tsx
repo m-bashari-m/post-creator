@@ -1,6 +1,7 @@
 import { useAppSelector } from "../../hooks/hooks";
 import { postsSelector } from "../../store/slices/postsSlice";
 import PostAuthor from "./PostAuthor";
+import ReactionButtons from "./ReactionButtons";
 import TimeAgo from "./TimeAgo";
 
 const PostsList = () => {
@@ -18,7 +19,7 @@ const PostsList = () => {
         <PostAuthor userId={post.userId} />
         <TimeAgo timestamp={post.date} />
       </p>
-      {/* <ReactionButtons post={post} /> */}
+      <ReactionButtons post={post} />
     </article>
   ));
 
