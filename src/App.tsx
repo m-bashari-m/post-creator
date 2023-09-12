@@ -1,9 +1,11 @@
 import "./App.css";
-import PostsList from "./components/Posts/PostsList";
+import AddPostFrom from "./components/posts/AddPostFrom";
+import PostsList from "./components/posts/PostsList";
 
 function App() {
   return (
     <>
+      <AddPostFrom />
       <PostsList />
     </>
   );
